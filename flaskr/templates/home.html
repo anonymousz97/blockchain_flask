@@ -1,0 +1,26 @@
+<!doctype html>
+{% extends 'base.html' %}
+
+
+{% block content %}
+<li><a href="{{ url_for('transaction.create_documents') }}">Create documents</a>
+  <li><a href="{{ url_for('transaction.create_block') }}">Create Block</a>
+    <li><a href="{{ url_for('transaction.sync') }}">Sync</a>
+  <table>
+    <tr>
+      <th>INDEX</td>
+        <th>DATA</td>
+        <th>HASH</td>
+        <th>NONCE</td>
+
+    </tr>
+    {% for item in blockchain.chain %}
+    <tr>
+        <td>{{item.index}}</td>
+        <td>{{item.data}}</td>
+        <td>{{item.hash}}</td>
+        <td>{{item.nonce}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

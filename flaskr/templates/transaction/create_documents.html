@@ -1,0 +1,17 @@
+<!doctype html>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="post">
+		<label for="username">Author</label>
+		<input name="username" id="username" required>
+		<label for="text_area">Input document content:</label>
+		<textarea id="text_area" name="text_area" rows="4" cols="50"></textarea>
+			<label for="comments">Comments</label>
+			<input name="comments" id="comments" required>
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+{% endblock %}

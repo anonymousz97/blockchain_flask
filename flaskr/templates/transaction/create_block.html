@@ -1,0 +1,13 @@
+<!doctype html>
+{% extends 'base.html' %}
+
+{% block content %}
+  <table>
+    {% for item in blockchain.unconfirmed_documents %}
+    <tr>
+        <td>{{item}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <input type="submit" value="Create Block">
+{% endblock %}
