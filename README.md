@@ -12,7 +12,9 @@ WINDOWS : (cmd)
 - Chạy `set FLASK_ENV = development`
 LINUX : (terminal)
 `$ export FLASK_APP=flaskr`
+<br>
 `$ export FLASK_ENV=development`
+<br>
 `$ flask run`
 
 - Chạy flask run
