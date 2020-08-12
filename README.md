@@ -8,8 +8,11 @@ Requirements :
 Cách chạy : 
 - Extract file rar.
 WINDOWS : (cmd)
+
 - Chạy `set FLASK_APP = flaskr`
+
 - Chạy `set FLASK_ENV = development`
+
 LINUX : (terminal)
 
 `$ export FLASK_APP=flaskr`
